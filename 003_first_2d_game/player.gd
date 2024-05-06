@@ -1,12 +1,14 @@
 extends Area2D
 
+signal hit
+
 @export var speed = 400 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
-	#hide()
+	hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -47,3 +49,16 @@ func _process(delta: float) -> void:
 	# Move the player.
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
+
+func _on_body_entered(body: Node2D) -> void:
+	hide() # Player disappears after being hit.
+	hit.emit()
+
+	# Disabling the area's collision shape can cause an error if it happens in the middle of the engine's collision processing.
+	# Using set_deferred() tells Godot to wait to disable the shape until it's safe to do so.
+	$CollisionShape2D.set_deferred("disabled", true)
+
+func start(pos):
+	position = pos
+	show()
+	$CollisionShape2D.disabled = false
