@@ -23,3 +23,7 @@ func _process(delta: float) -> void:
 
 	# Move the sprite
 	position += velocity * delta
+
+func _on_button_pressed() -> void:
+	# Toggle the processing
+	set_process(not is_processing())
