@@ -6,6 +6,14 @@ var angular_speed = PI
 func _init() -> void:
 	print("Hello, world")
 
+func _ready() -> void:
+	# Example of connecting a signal in runtime:
+	# We want to connect the signal when the scene is instantiated,
+	# and we can do that using the Node._ready() built-in function,
+	# which is called automatically by the engine when a node is fully instantiated.
+	var timer = get_node("Timer") as Timer
+	timer.timeout.connect(_on_timer_timeout)
+
 func _process(delta: float) -> void:
 
 	# Calculate the rotation
@@ -27,3 +35,6 @@ func _process(delta: float) -> void:
 func _on_button_pressed() -> void:
 	# Toggle the processing
 	set_process(not is_processing())
+
+func _on_timer_timeout():
+	visible = not visible
