@@ -1,5 +1,9 @@
 extends Sprite2D
 
+# Declare a signal called health_depleted
+signal health_depleted(old_health: int, new_health: int)
+var health = 10
+
 var speed = 400
 var angular_speed = PI
 
@@ -38,3 +42,9 @@ func _on_button_pressed() -> void:
 
 func _on_timer_timeout():
 	visible = not visible
+
+func take_damage(amount):
+	health -= amount
+	if health <= 0:
+		# Emit the signal when the health is depleted
+		health_depleted.emit()
