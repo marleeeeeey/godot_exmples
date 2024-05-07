@@ -8,6 +8,8 @@ func game_over() -> void:
 	$ScoreTimer.stop()
 	$MobTimer.stop()
 	$HUD.show_game_over()
+	$Music.stop()
+	$DeathSound.play()
 
 
 func new_game():
@@ -23,6 +25,8 @@ func new_game():
 	# The call_group() function calls the named function on every
 	# node in a group - in this case we are telling every mob to delete itself.
 	get_tree().call_group("mobs", "queue_free")
+	
+	$Music.play() 
 
 
 func _on_start_timer_timeout() -> void:
