@@ -8,7 +8,7 @@
             "name": "GDScript: Launch Project",
             "type": "godot",
             "request": "launch",
-            "project": "${workspaceFolder}/step_by_step_002",
+            "project": "${workspaceFolder}/003_first_2d_game",
             "debug_collisions": false,
             "debug_paths": false,
             "debug_navigation": false,
