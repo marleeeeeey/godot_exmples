@@ -1,5 +1,8 @@
 extends Node
 
+# This definition introduce new property for UI.
+# Type PackedScene is a reference to a scene file.
+# File must be set via the editor UI (this is tricky stuff).
 @export var mob_scene: PackedScene
 var score
 
@@ -25,8 +28,9 @@ func new_game():
 	# The call_group() function calls the named function on every
 	# node in a group - in this case we are telling every mob to delete itself.
 	get_tree().call_group("mobs", "queue_free")
-	
-	$Music.play() 
+
+	# Play the music.
+	$Music.play()
 
 
 func _on_start_timer_timeout() -> void:
