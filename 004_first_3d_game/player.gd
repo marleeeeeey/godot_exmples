@@ -2,11 +2,19 @@ extends CharacterBody3D
 
 # How fast the player moves in meters per second.
 @export var speed = 14
+
 # The downward acceleration when in the air, in meters per second squared.
 @export var fall_acceleration = 75
 
 # The target_velocity is a 3D vector combining a speed with a direction.
 var target_velocity = Vector3.ZERO
+
+# Vertical impulse applied to the character upon jumping in meters per second.
+@export var jump_impulse = 20
+
+# Vertical impulse applied to the character upon bouncing over a mob in
+# meters per second.
+@export var bounce_impulse = 16
 
 func _physics_process(delta):
 	# We create a local variable to store the input direction.
@@ -39,4 +47,31 @@ func _physics_process(delta):
 
 	# Moving the Character
 	velocity = target_velocity
+	
+	# Jumping.
+	if is_on_floor() and Input.is_action_just_pressed("jump"):
+		target_velocity.y = jump_impulse
+		
+	# Iterate through all collisions that occurred this frame
+	for index in range(get_slide_collision_count()):
+		# We get one of the collisions with the player
+		var collision = get_slide_collision(index)
+
+		# If the collision is with ground
+		if collision.get_collider() == null:
+			continue
+
+		# If the collider is with a mob
+		if collision.get_collider().is_in_group("mob"):
+			var mob = collision.get_collider()
+			# we check that we are hitting it from above.
+			# The collision normal is a 3D vector that is perpendicular 
+			# to the plane where the collision occurred.
+			if Vector3.UP.dot(collision.get_normal()) > 0.1:
+				# If so, we squash it and bounce.
+				mob.squash()
+				target_velocity.y = bounce_impulse
+				# Prevent further duplicate calls.
+				break
+	
 	move_and_slide()
