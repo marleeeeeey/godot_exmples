@@ -8,8 +8,10 @@ signal squashed
 # Maximum speed of the mob in meters per second.
 @export var max_speed = 18
 
+
 func _physics_process(_delta):
 	move_and_slide()
+
 
 # This function will be called from the Main scene.
 func initialize(start_position, player_position):

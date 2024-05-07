@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4nuui3h7gb58"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_45n5v"]
+[ext_resource type="Script" path="res://src/player.gd" id="1_45n5v"]
 [ext_resource type="PackedScene" uid="uid://l6el0m5p4lew" path="res://art/player.glb" id="1_ac2jy"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ffmjj"]

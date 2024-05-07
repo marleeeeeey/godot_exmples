@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://dsrqs2tgcctwv"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_3lldm"]
-[ext_resource type="PackedScene" uid="uid://d4nuui3h7gb58" path="res://player.tscn" id="1_ea16f"]
-[ext_resource type="PackedScene" uid="uid://n2njj27f71th" path="res://mob.tscn" id="2_an6pb"]
+[ext_resource type="Script" path="res://src/main.gd" id="1_3lldm"]
+[ext_resource type="PackedScene" uid="uid://d4nuui3h7gb58" path="res://scenes/player.tscn" id="1_ea16f"]
+[ext_resource type="PackedScene" uid="uid://n2njj27f71th" path="res://scenes/mob.tscn" id="2_an6pb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oio1r"]
 size = Vector3(60, 2, 60)
@@ -74,7 +74,7 @@ mesh = SubResource("CylinderMesh_jm8de")
 curve = SubResource("Curve3D_u0i7f")
 
 [node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
-transform = Transform3D(0.999996, 0, -0.00276619, 0, 1, 0, 0.00276619, 0, 0.999996, -15.9805, 0, 16.1107)
+transform = Transform3D(0.999996, 0, -0.00276678, 0, 1, 0, 0.00276678, 0, 0.999996, -15.9805, 0, 16.1107)
 
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5

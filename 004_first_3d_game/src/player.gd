@@ -16,6 +16,7 @@ var target_velocity = Vector3.ZERO
 # meters per second.
 @export var bounce_impulse = 16
 
+
 func _physics_process(delta):
 	# We create a local variable to store the input direction.
 	var direction = Vector3.ZERO
@@ -36,22 +37,22 @@ func _physics_process(delta):
 		direction = direction.normalized()
 		# Setting the basis property will affect the rotation of the node.
 		$Pivot.basis = Basis.looking_at(direction)
-		
+
 	# Ground Velocity
 	target_velocity.x = direction.x * speed
 	target_velocity.z = direction.z * speed
 
 	# Vertical Velocity
-	if not is_on_floor(): # If in the air, fall towards the floor. Literally gravity
+	if not is_on_floor():  # If in the air, fall towards the floor. Literally gravity
 		target_velocity.y = target_velocity.y - (fall_acceleration * delta)
 
 	# Moving the Character
 	velocity = target_velocity
-	
+
 	# Jumping.
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		target_velocity.y = jump_impulse
-		
+
 	# Iterate through all collisions that occurred this frame
 	for index in range(get_slide_collision_count()):
 		# We get one of the collisions with the player
@@ -65,7 +66,7 @@ func _physics_process(delta):
 		if collision.get_collider().is_in_group("mob"):
 			var mob = collision.get_collider()
 			# we check that we are hitting it from above.
-			# The collision normal is a 3D vector that is perpendicular 
+			# The collision normal is a 3D vector that is perpendicular
 			# to the plane where the collision occurred.
 			if Vector3.UP.dot(collision.get_normal()) > 0.1:
 				# If so, we squash it and bounce.
@@ -73,5 +74,5 @@ func _physics_process(delta):
 				target_velocity.y = bounce_impulse
 				# Prevent further duplicate calls.
 				break
-	
+
 	move_and_slide()
