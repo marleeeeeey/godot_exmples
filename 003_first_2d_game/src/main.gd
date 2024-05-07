@@ -11,12 +11,18 @@ func game_over() -> void:
 
 
 func new_game():
+	# Update game state.
 	score = 0
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
 
+	# Update HUD.
 	$HUD.update_score(score)
 	$HUD.show_message("Get Ready")
+
+	# The call_group() function calls the named function on every
+	# node in a group - in this case we are telling every mob to delete itself.
+	get_tree().call_group("mobs", "queue_free")
 
 
 func _on_start_timer_timeout() -> void:
