@@ -30,6 +30,9 @@ func initialize(start_position, player_position):
 	# in order to move in the direction the mob is looking.
 	velocity = velocity.rotated(Vector3.UP, rotation.y)
 
+	# Change the animaiton playback speed.d
+	$AnimationPlayer.speed_scale = random_speed / min_speed
+
 
 func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
 	queue_free()
