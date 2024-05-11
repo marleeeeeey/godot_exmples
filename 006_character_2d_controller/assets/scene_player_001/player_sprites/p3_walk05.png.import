@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4afvuhouabva"
-path="res://.godot/imported/p3_stand.png-29c1d5228deae9a0bcd890666c4a9d76.ctex"
+uid="uid://b2h7k5guckd4s"
+path="res://.godot/imported/p3_walk05.png-01b48317138719eded728ed7b2a71811.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites_buble_man/p3_stand.png"
-dest_files=["res://.godot/imported/p3_stand.png-29c1d5228deae9a0bcd890666c4a9d76.ctex"]
+source_file="res://assets/scene_player_001/player_sprites/p3_walk05.png"
+dest_files=["res://.godot/imported/p3_walk05.png-01b48317138719eded728ed7b2a71811.ctex"]
 
 [params]
 

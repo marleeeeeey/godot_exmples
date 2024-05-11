@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkh83exbks12h"]
 
-[ext_resource type="PackedScene" uid="uid://b44gy86luotnb" path="res://scenes/scene_player_001/player.tscn" id="1_gn1tk"]
+[ext_resource type="PackedScene" uid="uid://b44gy86luotnb" path="res://assets/scene_player_001/player.tscn" id="1_gn1tk"]
 [ext_resource type="TileSet" uid="uid://l3se0e5ejwgk" path="res://assets/tileset_platformer_001/tileset_platformer_001.tres" id="2_8tlc3"]
 
 [node name="Main" type="Node2D"]
