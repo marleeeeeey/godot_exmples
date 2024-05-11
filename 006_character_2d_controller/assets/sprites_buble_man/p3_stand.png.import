@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dduebpv6wbd72"
-path="res://.godot/imported/tiles_spritesheet.png-26ea83d57148f85185996e69ae74bbfc.ctex"
+uid="uid://4afvuhouabva"
+path="res://.godot/imported/p3_stand.png-29c1d5228deae9a0bcd890666c4a9d76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles_spritesheet.png"
-dest_files=["res://.godot/imported/tiles_spritesheet.png-26ea83d57148f85185996e69ae74bbfc.ctex"]
+source_file="res://assets/sprites_buble_man/p3_stand.png"
+dest_files=["res://.godot/imported/p3_stand.png-29c1d5228deae9a0bcd890666c4a9d76.ctex"]
 
 [params]
 

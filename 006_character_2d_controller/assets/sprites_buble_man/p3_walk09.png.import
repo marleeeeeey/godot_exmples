@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cguaer6145vqs"
-path="res://.godot/imported/p3_walk06.png-81fa584157a27198dbc0c77dd299b22a.ctex"
+uid="uid://3s71tfgo2vlw"
+path="res://.godot/imported/p3_walk09.png-2dda1b7942bee4b134f92820599c517a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/p3_walk06.png"
-dest_files=["res://.godot/imported/p3_walk06.png-81fa584157a27198dbc0c77dd299b22a.ctex"]
+source_file="res://assets/sprites_buble_man/p3_walk09.png"
+dest_files=["res://.godot/imported/p3_walk09.png-2dda1b7942bee4b134f92820599c517a.ctex"]
 
 [params]
 

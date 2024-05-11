@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpv5xeh4yewmm"
-path="res://.godot/imported/p3_walk04.png-0ff9b43b28c1ba8b2d66afe27c9072ee.ctex"
+path="res://.godot/imported/p3_walk04.png-09547b8b08ce719bab9196755b6556c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/p3_walk04.png"
-dest_files=["res://.godot/imported/p3_walk04.png-0ff9b43b28c1ba8b2d66afe27c9072ee.ctex"]
+source_file="res://assets/sprites_buble_man/p3_walk04.png"
+dest_files=["res://.godot/imported/p3_walk04.png-09547b8b08ce719bab9196755b6556c3.ctex"]
 
 [params]
 

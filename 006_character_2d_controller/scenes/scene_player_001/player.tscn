@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b44gy86luotnb"]
 
-[ext_resource type="Texture2D" uid="uid://4afvuhouabva" path="res://assets/sprites/p3_stand.png" id="1_k750i"]
+[ext_resource type="Texture2D" uid="uid://4afvuhouabva" path="res://assets/sprites_buble_man/p3_stand.png" id="1_vqu7c"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mlysa"]
 radius = 32.0
@@ -9,7 +9,7 @@ height = 94.0
 [node name="Player" type="CharacterBody2D"]
 
 [node name="IdleSprite" type="Sprite2D" parent="."]
-texture = ExtResource("1_k750i")
+texture = ExtResource("1_vqu7c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_mlysa")
