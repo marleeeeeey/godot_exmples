@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ljloegk42ug7"]
+[gd_scene load_steps=4 format=3 uid="uid://ljloegk42ug7"]
 
 [ext_resource type="TileSet" uid="uid://dox6248ym4tnk" path="res://tilesets/platformet_tileset.tres" id="1_2vrmy"]
 [ext_resource type="Texture2D" uid="uid://dbs2y08jkacmh" path="res://assets/icon.svg" id="2_6d0x0"]
-[ext_resource type="TileSet" uid="uid://bexnxvgvw5is5" path="res://tilesets/tutorial_tileset.tres" id="3_kif0i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nuxe0"]
 
@@ -28,7 +27,3 @@ shape = SubResource("RectangleShape2D_nuxe0")
 
 [node name="Camera2D" type="Camera2D" parent="ExpirementalTileMap/RigidBody2D"]
 zoom = Vector2(3, 3)
-
-[node name="TutorialMap" type="TileMap" parent="."]
-tile_set = ExtResource("3_kif0i")
-format = 2
