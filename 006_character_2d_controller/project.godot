@@ -11,4 +11,5 @@ config_version=5
 [application]
 
 config/name="006 Character 2d Controller"
+run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
