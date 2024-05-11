@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://v7ugqsp7klo4"]
+
+[node name="TutorialSceneWaterAnimation" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2

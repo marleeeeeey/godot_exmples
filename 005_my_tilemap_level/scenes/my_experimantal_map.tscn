@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ljloegk42ug7"]
 
-[ext_resource type="TileSet" uid="uid://dox6248ym4tnk" path="res://tilesets/platformet_tileset.tres" id="1_jq88x"]
+[ext_resource type="TileSet" uid="uid://dox6248ym4tnk" path="res://tilesets/my_platformet_tileset.tres" id="1_jq88x"]
 [ext_resource type="Texture2D" uid="uid://dbs2y08jkacmh" path="res://assets/icon.svg" id="2_btkvv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nuxe0"]

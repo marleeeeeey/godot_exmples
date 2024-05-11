@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://btkjb6js5t3ej"]
 
-[ext_resource type="TileSet" uid="uid://cvgdrn2lthv5p" path="res://tilesets/tutorial_tileset2.tres" id="1_uhip1"]
+[ext_resource type="TileSet" uid="uid://cvgdrn2lthv5p" path="res://tilesets/tutorial_tileset_terrain.tres" id="1_uhip1"]
 
 [node name="TutorialSceneTerrainPattern" type="Node2D"]
 
