@@ -1,6 +1,9 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bexnxvgvw5is5"]
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://bexnxvgvw5is5"]
 
 [ext_resource type="Texture2D" uid="uid://d2hlgbf0kfa8f" path="res://assets/tiles_spritesheet.png" id="1_liera"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_g4g08"]
+tile_data = PackedInt32Array(0, 524288, 0, 65536, 458752, 12, 131072, 524288, 12, 196608, 524288, 12, 65537, 524288, 0, 131073, 458752, 12, 196609, 524288, 12, 131074, 524288, 0, 196610, 458752, 12, 196611, 458752, 8, 196612, 458752, 8, 196613, 458752, 8, 196614, 458752, 8, 196615, 524288, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8lgju"]
 texture = ExtResource("1_liera")
@@ -480,3 +483,4 @@ texture_region_size = Vector2i(70, 70)
 tile_size = Vector2i(70, 70)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_8lgju")
+pattern_0 = SubResource("TileMapPattern_g4g08")
