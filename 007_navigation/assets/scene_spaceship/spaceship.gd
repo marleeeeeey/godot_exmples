@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 300
+@export var speed = 600
 
 
 func _input(event):

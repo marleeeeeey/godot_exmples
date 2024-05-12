@@ -13,4 +13,3 @@ config_version=5
 config/name="007 Navigation"
 run/main_scene="res://scenes/spaceship_navigation.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
