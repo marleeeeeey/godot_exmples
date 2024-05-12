@@ -18,3 +18,7 @@ animation = &"idle"
 shape = SubResource("CapsuleShape2D_mlysa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 0.6
+drag_bottom_margin = 0.6
