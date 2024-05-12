@@ -10,6 +10,7 @@ radius = 38.0
 script = ExtResource("1_s06nx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
 texture = ExtResource("1_xefed")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
