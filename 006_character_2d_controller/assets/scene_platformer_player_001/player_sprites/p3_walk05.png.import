@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4afvuhouabva"
-path="res://.godot/imported/p3_stand.png-32c7ecbc0ddc881b3eaa520e6273e9b7.ctex"
+uid="uid://b2h7k5guckd4s"
+path="res://.godot/imported/p3_walk05.png-220296bd11e105fef15fd71e587eea18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/scene_player_001/player_sprites/p3_stand.png"
-dest_files=["res://.godot/imported/p3_stand.png-32c7ecbc0ddc881b3eaa520e6273e9b7.ctex"]
+source_file="res://assets/scene_platformer_player_001/player_sprites/p3_walk05.png"
+dest_files=["res://.godot/imported/p3_walk05.png-220296bd11e105fef15fd71e587eea18.ctex"]
 
 [params]
 
