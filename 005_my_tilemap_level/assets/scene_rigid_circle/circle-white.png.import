@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctk2x3yu2acgq"
-path="res://.godot/imported/MP-Animated.png-b3f29653b22450b10da1199fc833f0b5.ctex"
+uid="uid://dcpm1qoc36vfw"
+path="res://.godot/imported/circle-white.png-b7ac227a865a9646dfe55570648ae25e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MP-Animated.png"
-dest_files=["res://.godot/imported/MP-Animated.png-b3f29653b22450b10da1199fc833f0b5.ctex"]
+source_file="res://assets/scene_rigid_circle/circle-white.png"
+dest_files=["res://.godot/imported/circle-white.png-b7ac227a865a9646dfe55570648ae25e.ctex"]
 
 [params]
 

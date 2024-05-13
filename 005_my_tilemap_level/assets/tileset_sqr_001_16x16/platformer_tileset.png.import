@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnx32oe3r271h"
-path="res://.godot/imported/AZagorskiy-Isometric.png-0d62ba3fd0ec6717d5cb74e84adf3586.ctex"
+uid="uid://byex2trgxvd87"
+path="res://.godot/imported/platformer_tileset.png-afe136dec494921850a02f765379ada5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/AZagorskiy-Isometric.png"
-dest_files=["res://.godot/imported/AZagorskiy-Isometric.png-0d62ba3fd0ec6717d5cb74e84adf3586.ctex"]
+source_file="res://assets/tileset_sqr_001_16x16/platformer_tileset.png"
+dest_files=["res://.godot/imported/platformer_tileset.png-afe136dec494921850a02f765379ada5.ctex"]
 
 [params]
 

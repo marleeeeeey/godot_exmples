@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://v7ugqsp7klo4"]
 
-[ext_resource type="TileSet" uid="uid://ctn4dggruqra4" path="res://tilesets/tutorial_tileset_water_animaiton.tres" id="1_en4t2"]
+[ext_resource type="TileSet" uid="uid://ctn4dggruqra4" path="res://assets/tileset_sqr_004_64x64_water_animation/tutorial_tileset_water_animaiton.tres" id="1_en4t2"]
 
 [node name="TutorialSceneWaterAnimation" type="Node2D"]
 

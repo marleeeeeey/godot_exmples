@@ -13,7 +13,7 @@ config_version=5
 config/name="005 My Tilemap Level"
 run/main_scene="res://scenes/my_experimantal_map.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://assets/icon.svg"
+config/icon="res://assets/scene_rigid_godot_icon/icon.svg"
 
 [display]
 

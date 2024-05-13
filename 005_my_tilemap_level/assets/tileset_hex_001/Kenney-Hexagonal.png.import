@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byex2trgxvd87"
-path="res://.godot/imported/platformer_tileset.png-58e0b0b7bc513a972c8101ac98cc1157.ctex"
+uid="uid://c76pduw6lgld5"
+path="res://.godot/imported/Kenney-Hexagonal.png-b989f42565ae78af01413c505532a938.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platformer_tileset.png"
-dest_files=["res://.godot/imported/platformer_tileset.png-58e0b0b7bc513a972c8101ac98cc1157.ctex"]
+source_file="res://assets/tileset_hex_001/Kenney-Hexagonal.png"
+dest_files=["res://.godot/imported/Kenney-Hexagonal.png-b989f42565ae78af01413c505532a938.ctex"]
 
 [params]
 

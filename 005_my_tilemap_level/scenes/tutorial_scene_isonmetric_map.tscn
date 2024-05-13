@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cgdh81unsw0f6"]
 
-[ext_resource type="TileSet" uid="uid://bem5mogym0e2c" path="res://tilesets/tutorial_tileset_isometric.tres" id="1_ovs5t"]
+[ext_resource type="TileSet" uid="uid://bem5mogym0e2c" path="res://assets/tileset_iso_002_160x150/tutorial_tileset_isometric.tres" id="1_ovs5t"]
 
 [node name="TutorialSceneIsonmetricMap" type="Node2D"]
 

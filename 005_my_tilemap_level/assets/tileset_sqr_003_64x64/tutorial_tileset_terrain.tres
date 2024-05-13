@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cvgdrn2lthv5p"]
 
-[ext_resource type="Texture2D" uid="uid://cijju07a2rey5" path="res://assets/Kenney-AbstractPlatformer.png" id="1_ubt8f"]
+[ext_resource type="Texture2D" uid="uid://cijju07a2rey5" path="res://assets/tileset_sqr_003_64x64/Kenney-AbstractPlatformer.png" id="1_yosk2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_32bhf"]
-texture = ExtResource("1_ubt8f")
+texture = ExtResource("1_yosk2")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/terrain_set = 0

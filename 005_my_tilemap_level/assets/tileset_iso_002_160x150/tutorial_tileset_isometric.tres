@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bem5mogym0e2c"]
 
-[ext_resource type="Texture2D" uid="uid://dnx32oe3r271h" path="res://assets/AZagorskiy-Isometric.png" id="1_obooh"]
+[ext_resource type="Texture2D" uid="uid://dnx32oe3r271h" path="res://assets/tileset_iso_002_160x150/AZagorskiy-Isometric.png" id="1_2mbuq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ew2dh"]
-texture = ExtResource("1_obooh")
+texture = ExtResource("1_2mbuq")
 separation = Vector2i(30, 0)
 texture_region_size = Vector2i(160, 150)
 3:0/0 = 0
