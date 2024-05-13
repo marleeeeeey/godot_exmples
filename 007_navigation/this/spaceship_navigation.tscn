@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy1uuwftyxmtk"]
+
+[ext_resource type="PackedScene" uid="uid://d2g2bwx2n8kj" path="res://common/scene_spaceship/spaceship.tscn" id="1_s78bl"]
+[ext_resource type="PackedScene" uid="uid://bwvp5a8vr6fw7" path="res://common/scene_asteroid/asteroid.tscn" id="2_q7v5b"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_qtc4d"]
+vertices = PackedVector2Array(227, 680, 241, 700, -12, 700, 1213, 700, 417, 700, 436, 661, 1213, -76, 1213, 152, 1195, 145, 1066, 377, 1064, 372, 1110, 368, 1161, 357, 1213, 352, -12, -76, 1139, 150, 225, 659, 196, 648, 163, 600, 158, 544, 429, 606, 833, 415, 429, 348, 429, 346, 470, 336, 689, 357, 850, 377, 854, 393, 160, 404, 162, 406, 150, 432, 510, 296, 511, 290, 527, 286, 548, 307, 602, 321, 610, 318, 635, 343, 1052, 431, 1035, 469, 1030, 452, 398, 559, 365, 525, 348, 501, 364, 469, 819, 469, 367, 546, 1138, 348, 1021, 523, 981, 563, 1111, 170, 1091, 161, 1036, 166, 1006, 186, 961, 175, 907, 189, 656, 119, 155, 488, 172, 513, 146, 350, 160, 296, 200, 256, 239, 245, 241, 240, 281, 200, 321, 189, 362, 148, 602, 105, 567, 113, 547, 93, 348, 401, 349, 398, 389, 388, 357, 413, 689, 141, 680, 143, 399, 133, 397, 138, 439, 93, 927, 577, 873, 563, 833, 523, 493, 79, 783, 303, 853, 283, 863, 324, 743, 343, 743, 155, 797, 249, 867, 229, 783, 195)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2), PackedInt32Array(3, 4, 5), PackedInt32Array(6, 7, 8), PackedInt32Array(9, 10, 11), PackedInt32Array(12, 13, 3), PackedInt32Array(14, 6, 8, 15), PackedInt32Array(16, 0, 2, 17), PackedInt32Array(18, 17, 2), PackedInt32Array(18, 2, 14, 19), PackedInt32Array(3, 5, 20), PackedInt32Array(21, 22, 23, 24, 25, 26, 27), PackedInt32Array(28, 29, 30), PackedInt32Array(31, 32, 33, 34), PackedInt32Array(35, 36, 37), PackedInt32Array(38, 9, 11, 3), PackedInt32Array(39, 40, 38, 3), PackedInt32Array(41, 42, 43, 44, 21, 45), PackedInt32Array(41, 46, 42), PackedInt32Array(24, 31, 34), PackedInt32Array(47, 12, 3, 11), PackedInt32Array(48, 39, 3), PackedInt32Array(49, 48, 3), PackedInt32Array(15, 50, 51), PackedInt32Array(14, 15, 51, 52), PackedInt32Array(14, 52, 53, 54), PackedInt32Array(14, 54, 55, 56), PackedInt32Array(57, 58, 19), PackedInt32Array(57, 19, 14, 30), PackedInt32Array(28, 30, 14, 59), PackedInt32Array(60, 59, 14), PackedInt32Array(61, 60, 14), PackedInt32Array(62, 61, 14, 63), PackedInt32Array(64, 63, 14), PackedInt32Array(65, 64, 14, 66), PackedInt32Array(67, 68, 69), PackedInt32Array(70, 71, 72, 73), PackedInt32Array(44, 73, 72, 21), PackedInt32Array(74, 75, 56), PackedInt32Array(76, 77, 66, 14), PackedInt32Array(78, 76, 14), PackedInt32Array(79, 3, 20, 41, 80), PackedInt32Array(79, 49, 3), PackedInt32Array(81, 80, 41), PackedInt32Array(45, 81, 41), PackedInt32Array(21, 72, 22), PackedInt32Array(82, 78, 14), PackedInt32Array(24, 34, 35, 37), PackedInt32Array(83, 84, 85, 26, 86), PackedInt32Array(87, 74, 56, 55), PackedInt32Array(24, 37, 25), PackedInt32Array(26, 25, 86), PackedInt32Array(84, 83, 88, 89), PackedInt32Array(89, 88, 90, 55), PackedInt32Array(55, 90, 87), PackedInt32Array(14, 56, 67), PackedInt32Array(82, 14, 67, 69)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-72.0724, -136, 1273.28, -136, 1273.28, 760, -72.0724, 760)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 60.0
+
+[node name="SpaceshipNavigation" type="Node2D"]
+
+[node name="Spaceship" parent="." instance=ExtResource("1_s78bl")]
+position = Vector2(472, 520)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+scale = Vector2(0.996654, 1)
+navigation_polygon = SubResource("NavigationPolygon_qtc4d")
+
+[node name="Asteroid" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(602, 213)
+
+[node name="Asteroid2" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(254, 350)
+
+[node name="Asteroid3" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(335, 294)
+
+[node name="Asteroid4" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(416, 242)
+
+[node name="Asteroid5" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(493, 187)
+
+[node name="Asteroid6" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(689, 249)
+
+[node name="Asteroid8" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(927, 469)
+
+[node name="Asteroid10" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(958, 377)
+
+[node name="Asteroid11" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(961, 283)
+
+[node name="Asteroid12" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(256.257, 451)
+rotation = 0.687449
+
+[node name="Asteroid13" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(264.265, 563)
+rotation = 0.687449
+
+[node name="Asteroid15" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(1073.08, 267)
+rotation = 0.687449
+
+[node name="Asteroid16" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(1177.18, 251)
+rotation = 0.687449
+
+[node name="Asteroid14" parent="NavigationRegion2D" instance=ExtResource("2_q7v5b")]
+position = Vector2(328.33, 643)
+rotation = 0.687449

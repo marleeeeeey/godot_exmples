@@ -10,6 +10,12 @@ config_version=5
 
 [application]
 
-config/name="007 Navigation"
-run/main_scene="res://this/spaceship_navigation.tscn"
+config/name="005 Tilemap"
+run/main_scene="res://this/my_experimantal_map.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://common/scene_rigid_godot_icon/icon.svg"
+
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=600
