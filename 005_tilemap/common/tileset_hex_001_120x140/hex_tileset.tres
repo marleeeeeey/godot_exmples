@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bfkbmxyjcolwx"]
 
-[ext_resource type="Texture2D" uid="uid://c76pduw6lgld5" path="res://common/tileset_hex_001/Kenney-Hexagonal.png" id="1_4cuqf"]
+[ext_resource type="Texture2D" uid="uid://c76pduw6lgld5" path="res://common/tileset_hex_001_120x140/Kenney-Hexagonal.png" id="1_gu1us"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lvbnj"]
-texture = ExtResource("1_4cuqf")
+texture = ExtResource("1_gu1us")
 separation = Vector2i(2, 3)
 texture_region_size = Vector2i(120, 139)
 0:1/0 = 0

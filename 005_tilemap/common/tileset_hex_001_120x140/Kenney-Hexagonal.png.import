@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c76pduw6lgld5"
-path="res://.godot/imported/Kenney-Hexagonal.png-97c17a3535e49bcea2d82e674e4ccb8e.ctex"
+path="res://.godot/imported/Kenney-Hexagonal.png-c77ef3a4c8c262bef738c94c5893728d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://common/tileset_hex_001/Kenney-Hexagonal.png"
-dest_files=["res://.godot/imported/Kenney-Hexagonal.png-97c17a3535e49bcea2d82e674e4ccb8e.ctex"]
+source_file="res://common/tileset_hex_001_120x140/Kenney-Hexagonal.png"
+dest_files=["res://.godot/imported/Kenney-Hexagonal.png-c77ef3a4c8c262bef738c94c5893728d.ctex"]
 
 [params]
 
