@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=3 uid="uid://dsrqs2tgcctwv"]
 
-[ext_resource type="Script" path="res://src/main.gd" id="1_3lldm"]
-[ext_resource type="PackedScene" uid="uid://d4nuui3h7gb58" path="res://scenes/player.tscn" id="1_ea16f"]
-[ext_resource type="PackedScene" uid="uid://n2njj27f71th" path="res://scenes/mob.tscn" id="2_an6pb"]
-[ext_resource type="FontFile" uid="uid://b3x3r1wycoqnt" path="res://fonts/Montserrat-Medium.ttf" id="4_b5qhm"]
-[ext_resource type="Script" path="res://src/score_label.gd" id="5_0acg1"]
+[ext_resource type="Script" path="res://this/main.gd" id="1_3lldm"]
+[ext_resource type="PackedScene" uid="uid://d4nuui3h7gb58" path="res://common/scene_player/player.tscn" id="1_ea16f"]
+[ext_resource type="PackedScene" uid="uid://n2njj27f71th" path="res://common/scene_mob/mob.tscn" id="2_an6pb"]
+[ext_resource type="FontFile" uid="uid://b3x3r1wycoqnt" path="res://this/fonts/Montserrat-Medium.ttf" id="4_b5qhm"]
+[ext_resource type="Script" path="res://this/score_label.gd" id="5_0acg1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oio1r"]
 size = Vector3(60, 2, 60)

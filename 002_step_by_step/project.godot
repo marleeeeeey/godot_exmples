@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Step By Step 002"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://this/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://assets/scene_controllable_godot_icon/icon.svg"
+config/icon="res://common/scene_controllable_godot_icon/icon.svg"
 
 [input]
 

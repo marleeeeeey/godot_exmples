@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dwclw8rgwl2p"]
 
-[ext_resource type="Texture2D" uid="uid://b7gmvrvr0soow" path="res://assets/scene_controllable_godot_icon/icon.svg" id="1_a8wug"]
-[ext_resource type="Script" path="res://assets/scene_controllable_godot_icon/controllable_godot_icon.gd" id="2_4de6j"]
+[ext_resource type="Texture2D" uid="uid://b7gmvrvr0soow" path="res://common/scene_controllable_godot_icon/icon.svg" id="1_a8wug"]
+[ext_resource type="Script" path="res://common/scene_controllable_godot_icon/controllable_godot_icon.gd" id="2_4de6j"]
 
 [node name="ContollableGodotIcon" type="Sprite2D"]
 position = Vector2(586, 281)
