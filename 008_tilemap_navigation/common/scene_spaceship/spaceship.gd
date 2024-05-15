@@ -3,6 +3,10 @@ extends CharacterBody2D
 @export var speed = 600
 @export var show_debug_info = false
 
+# TODO0: Here is an desing issue:
+# Camera2D should not be a child of the character.
+# User should be able to move the camera around.
+
 
 func _input(event):
 	# Mouse in viewport (screen) coordinates.
